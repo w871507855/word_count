@@ -17,3 +17,6 @@ def count(request):
 
     worddict = sorted(word_dict.items(),key=operator.itemgetter(1),reverse=True)
     return render(request, 'count.html',{'count':total_count,'word':user_word,'w_dict':word_dict,'w':worddict})
+
+def about(request):
+    return render(request, 'about.html')
